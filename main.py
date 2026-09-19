@@ -44,7 +44,7 @@ class SqlDiffUI:
         ttk.Entry(file_frame, textvariable=self.sqldiff_path, width=50).grid(
             row=0, column=1, padx=5, pady=2
         )
-        ttk.Button(file_frame, text="Buscar...", command=self.browse_sqldiff).grid(
+        ttk.Button(file_frame, text="Search...", command=self.browse_sqldiff).grid(
             row=0, column=2, pady=2
         )
 

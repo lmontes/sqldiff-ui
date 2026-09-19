@@ -13,6 +13,60 @@ A lightweight, user-friendly graphical interface (GUI) built with Python and [Tk
   - `--summary`: Show a summary of differences.
   - `--transaction`: Wrap the output script in a transaction.
 
+## Configuration
+
+To use this tool, you must download the **sqlite-tools** bundle from the [official SQLite downloads page](https://www.sqlite.org/download.html). For the application to detect it automatically, the `sqldiff` executable needs to be available in your system's `PATH`.
+
+Follow the instructions below according to your operating system:
+
+### Windows
+
+1. **Download and Extract:**
+   - Download the ZIP file named `sqlite-tools-win-*.zip`.
+   - Extract its contents to a permanent folder on your computer (e.g., `C:\sqlite-tools\`).
+
+2. **Add to PATH:**
+   - Open the **Start Menu**, search for `"env"`, and select **Edit the system environment variables**.
+   - In the System Properties window, click the **Environment Variables...** button at the bottom.
+   - Under *System variables* (or *User variables*), locate the **Path** variable and click **Edit...**.
+   - Click **New** and paste the full path to the folder where you extracted the tools (e.g., `C:\sqlite-tools\`).
+   - Click **OK** on all windows to save the changes.
+   - Restart your terminal or application for the changes to take effect.
+
+---
+
+### Linux
+
+Most Linux distributions allow you to install the SQLite development tools directly via your package manager, which configures the `PATH` automatically.
+
+#### Option 1: Via Package Manager (Recommended)
+
+Run the appropriate command for your distribution:
+
+- **Ubuntu / Debian / Mint:**
+  ```bash
+  sudo apt update
+  sudo apt install sqlite3
+  ```
+- **Fedora / RHEL / CentOS:**
+  ```bash
+  sudo dnf install sqlite
+  ```
+- **Arch Linux / Manjaro:**
+  ```bash
+  sudo pacman -S sqlite
+  ```
+
+#### Option 2: Manual Installation
+
+If you prefer to download the precompiled binary from the website:
+
+1. Download the `sqlite-tools-linux-*.zip` file and extract it.
+2. Move the `sqldiff` binary to a directory already included in your system's `PATH` (e.g., `/usr/local/bin/`):
+   ```bash
+   sudo mv /path/to/extracted/sqldiff /usr/local/bin/
+   sudo chmod +x /usr/local/bin/sqldiff
+   ```
 ## Development
 
 ### Setting Up the Environment
