@@ -1,6 +1,6 @@
 # SQLDiff UI
 
-A lightweight, user-friendly graphical interface (GUI) built with Python and Tkinter to compare SQLite databases. This tool wraps around the official SQLite `sqldiff` utility, eliminating the need to use the command line for database diffing.
+A lightweight, user-friendly graphical interface (GUI) built with Python and [Tkinter](https://docs.python.org/3/library/tkinter.html) to compare [SQLite](https://www.sqlite.org) databases. This tool wraps around the official SQLite [`sqldiff`](https://www.sqlite.org/sqldiff.html) utility, eliminating the need to use the command line for database diffing.
 
 ![](docs/img/ui.png)
 
