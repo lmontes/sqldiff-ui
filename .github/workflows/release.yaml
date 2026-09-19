@@ -13,11 +13,11 @@ jobs:
       matrix:
         include:
           - os: windows-latest
-            artifact_name: SqlDiffUI.exe
-            pyinstaller_cmd: pyinstaller --onefile --windowed --name="SqlDiffUI" main.py
+            artifact_name: SqlDiffUI_windows.exe
+            pyinstaller_cmd: pyinstaller --onefile --windowed --name="SqlDiffUI_windows" main.py
           - os: ubuntu-latest
-            artifact_name: SqlDiffUI
-            pyinstaller_cmd: pyinstaller --onefile --windowed --name="SqlDiffUI" main.py
+            artifact_name: SqlDiffUI_linux
+            pyinstaller_cmd: pyinstaller --onefile --windowed --name="SqlDiffUI_linux" main.py
 
     steps:
     - name: Checkout repository
